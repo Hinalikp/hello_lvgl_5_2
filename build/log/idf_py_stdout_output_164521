@@ -1,0 +1,77 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2-beta1-263-ge49823f10c 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jan 24 2024 10:09:32[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=121f0h ( 74224) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=00022218 vaddr=3ffb0000 size=024bch (  9404) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=000246dc vaddr=40080000 size=0b93ch ( 47420) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=4204ch (270412) map[0m
+[0;32mI (248) esp_image: segment 4: paddr=00072074 vaddr=4008b93c size=04a48h ( 19016) load[0m
+[0;32mI (263) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (264) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) cpu_start: Multicore app[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     LVGL_hello[0m
+[0;32mI (293) cpu_start: App version:      1[0m
+[0;32mI (297) cpu_start: Compile time:     Jan 24 2024 10:09:25[0m
+[0;32mI (303) cpu_start: ELF file SHA256:  f7cec3b7c...[0m
+[0;32mI (309) cpu_start: ESP-IDF:          v5.2-beta1-263-ge49823f10c[0m
+[0;32mI (315) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (320) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (325) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (330) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (337) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 3FFBF2B0 len 00020D50 (131 KiB): DRAM[0m
+[0;32mI (349) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (355) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (362) heap_init: At 40090384 len 0000FC7C (63 KiB): IRAM[0m
+[0;32mI (369) spi_flash: detected chip: generic[0m
+[0;32mI (373) spi_flash: flash io: dio[0m
+[0;33mW (376) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (390) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (401) main_task: Started on CPU0[0m
+[0;32mI (411) main_task: Calling app_main()[0m
+[0;32mI (411) main_task: Returned from app_main()[0m
+[0;32mI (421) lvgl_helpers: Display buffer size: 1024[0m
+[0;32mI (421) lvgl_helpers: Initializing SPI master for display[0m
+[0;32mI (421) lvgl_helpers: Configuring SPI host SPI2_HOST[0m
+[0;32mI (421) lvgl_helpers: MISO pin: -1, MOSI pin: 13, SCLK pin: 14, IO2/WP pin: -1, IO3/HD pin: -1[0m
+[0;32mI (441) lvgl_helpers: Max transfer size: 3072 (bytes)[0m
+[0;32mI (441) lvgl_helpers: Initializing SPI bus...[0m
+[0;32mI (451) disp_spi: Adding SPI device[0m
+[0;32mI (461) disp_spi: Clock speed: 40000000Hz, mode: 0, CS pin: 15[0m
+[0;32mI (461) ILI9488: ILI9488 initialization.[0m
+[0;32mI (791) ILI9488: Display orientation: LANDSCAPE[0m
+[0;32mI (791) ILI9488: 0x36 command value: 0x28[0m
+[0;32mI (791) disp_backlight: Setting LCD backlight: 100%[0m
+[0;32mI (791) FT6X36: Found touch panel controller[0m
+[0;32mI (801) lvgl_i2c: Starting I2C master at port 0.[0m
+[0;32mI (811) lvgl_i2c: Initialised port 0 (SDA: 21, SCL: 22, speed: 400000 Hz.)[0m
+[0;32mI (831) FT6X36: 	Device ID: 0x11[0m
+[0;32mI (851) FT6X36: 	Chip ID: 0x36[0m
+[0;32mI (871) FT6X36: 	Device mode: 0x00[0m
+[0;32mI (891) FT6X36: 	Firmware ID: 0x03[0m
+[0;32mI (911) FT6X36: 	Release code: 0x01[0m
